@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-rgis
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-service-e2e-tenant/appstudio/dc-metro-map-rgis@sha256:720b3e8119aef31160bcb5112677bf707b2ec5fe2b916f14f414ca9874ac82f7
+        name: my-nodejs
+        resources: {}
+status: {}
